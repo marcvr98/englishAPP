@@ -82,8 +82,9 @@ def main() -> None:
         return
 
     DATA_FILE.parent.mkdir(exist_ok=True)
-    existentes = json.loads(DATA_FILE.read_text()) if DATA_FILE.exists() else []
-
+    contenido = DATA_FILE.read_text().strip() if DATA_FILE.exists() else ""
+    existentes = json.loads(contenido) if contenido else []
+    
     for issue in pendientes:
         frase = issue["title"]
         try:
