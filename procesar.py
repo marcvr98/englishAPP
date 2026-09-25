@@ -13,21 +13,26 @@ from typing import List
 
 import instructor
 import requests
+from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import BaseModel
 
-REPO = os.environ["GITHUB_REPOSITORY"]  # "usuario/repo", lo pone Actions solo
+load_dotenv()  # no hace nada si no hay .env (caso de GitHub Actions)
+
+REPO = os.environ["GITHUB_REPOSITORY"]  # "usuario/repo"
 TOKEN = os.environ["GITHUB_TOKEN"]
 API = f"https://api.github.com/repos/{REPO}/issues"
 HEADERS = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json"}
 
 DATA_FILE = Path("data/expresiones.json")
 
+OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434/v1")
+MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:14b")
+
 client = instructor.from_openai(
-    OpenAI(base_url="http://localhost:11434/v1", api_key="ollama"),
+    OpenAI(base_url=OLLAMA_BASE_URL, api_key="ollama"),
     mode=instructor.Mode.JSON,
 )
-MODEL = "qwen2.5:14b"
 
 
 class ExpresionOutput(BaseModel):
@@ -36,15 +41,15 @@ class ExpresionOutput(BaseModel):
     registro: str
     definicion: str
     ejemplos: List[str]
-    sinonimos: List[str]
-    contexto_uso: str
 
 
 SYSTEM_PROMPT = (
     "Eres un profesor de inglés especializado en preparación para el examen "
     "C2 Advanced/Proficiency de Cambridge. Estructura la expresión que "
     "recibas siendo preciso con el registro: en el C2 penalizan mezclar "
-    "expresiones coloquiales en textos formales."
+    "expresiones coloquiales en textos formales. Los 'ejemplos' deben ser "
+    "frases completas escritas enteramente en inglés (nunca en español ni "
+    "mezcladas), usando la expresión en contexto real."
 )
 
 

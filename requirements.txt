@@ -4,3 +4,4 @@ instructor
 openai
 pydantic
 requests
+dotenv
