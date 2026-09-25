@@ -2,8 +2,9 @@ name: Procesar expresiones
 
 on:
   schedule:
-    - cron: "0 21 * * *"  # 21:00 UTC → 22:00/23:00 hora española según DST
-  workflow_dispatch:       # para poder lanzarlo a mano cuando quieras
+    - cron: "0 8 * * 1-5"  # 10:00 en Madrid con horario de verano (CEST, UTC+2)
+    - cron: "0 9 * * 1-5"  # 10:00 en Madrid con horario de invierno (CET, UTC+1)
+  workflow_dispatch:       # para poder lanzarlo a mano cuando quieras, a cualquier hora
 
 permissions:
   contents: write
@@ -13,17 +14,37 @@ jobs:
   procesar:
     runs-on: self-hosted
     steps:
+      - name: Comprobar que son las 10:00 en Madrid
+        id: hora
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            # Lanzado a mano (workflow_dispatch): siempre procesa
+            echo "correcta=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          hora_actual=$(TZ="Europe/Madrid" date +%H)
+          if [ "$hora_actual" = "10" ]; then
+            echo "correcta=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "correcta=false" >> "$GITHUB_OUTPUT"
+            echo "Son las $hora_actual en Madrid, no las 10 — saliendo sin procesar."
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.hora.outputs.correcta == 'true'
 
       - name: Instalar dependencias
+        if: steps.hora.outputs.correcta == 'true'
         run: pip install -r requirements.txt
 
       - name: Procesar frases pendientes
+        if: steps.hora.outputs.correcta == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python procesar.py
 
       - name: Commit y push del resultado
+        if: steps.hora.outputs.correcta == 'true'
         run: |
           git config user.name "c2-bot"
           git config user.email "c2-bot@users.noreply.github.com"
