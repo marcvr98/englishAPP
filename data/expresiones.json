@@ -48,5 +48,15 @@
       "The excessive bureaucracy at the office makes it difficult to implement new ideas.",
       "Language barriers can make it difficult to communicate effectively with clients from other countries."
     ]
+  },
+  {
+    "expresion": "Under the weather",
+    "traduccion": "Estoy un poco enfermo o indispuesto",
+    "registro": "Informal",
+    "definicion": "Una expresión coloquial que se utiliza para indicar que uno se siente un poco enfermo o no se encuentra bien.",
+    "ejemplos": [
+      "I'm feeling a bit under the weather today, so I might have to take the day off.",
+      "My head is really hurting, and I'm under the weather at the moment."
+    ]
   }
 ]
