@@ -4,8 +4,8 @@ on:
   schedule:
     - cron: "0 8 * * 1-5"  # 10:00 en Madrid con horario de verano (CEST, UTC+2)
     - cron: "0 9 * * 1-5"  # 10:00 en Madrid con horario de invierno (CET, UTC+1)
-    - cron: "0 9 * * 1-5"   # 11:00 en Madrid con horario de verano (CEST, UTC+2)
-    - cron: "0 10 * * 1-5"  # 11:00 en Madrid con horario de invierno (CET, UTC+1)
+    - cron: "30 9 * * 1-5"   # 11:30 Madrid en verano
+    - cron: "30 10 * * 1-5"  # 11:30 Madrid en invierno
   workflow_dispatch:       # para poder lanzarlo a mano cuando quieras, a cualquier hora
 
 permissions:
@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   procesar:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Comprobar que son las 10:00 en Madrid
         id: hora
