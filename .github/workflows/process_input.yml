@@ -2,6 +2,7 @@ name: Procesar expresiones
 
 on:
   schedule:
+    - cron: "30 10 * * 1-5"
     - cron: "0 8 * * 1-5"  # 10:00 en Madrid con horario de verano (CEST, UTC+2)
     - cron: "0 9 * * 1-5"  # 10:00 en Madrid con horario de invierno (CET, UTC+1)
     - cron: "30 9 * * 1-5"   # 11:30 Madrid en verano
