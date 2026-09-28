@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   procesar:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Comprobar que son las 10:00 en Madrid
         id: hora
