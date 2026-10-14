@@ -18,6 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Restaurar caché del modelo de Ollama
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: ${{ runner.os }}-ollama-${{ env.OLLAMA_MODEL }}
+
       - name: Iniciar Ollama y descargar el modelo
         run: |
           curl -fsSL https://ollama.com/install.sh | sh
