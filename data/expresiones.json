@@ -58,5 +58,16 @@
       "I'm feeling a bit under the weather today, so I might have to take the day off.",
       "My head is really hurting, and I'm under the weather at the moment."
     ]
+  },
+  {
+    "expresion": "Be/sit on the fence",
+    "traduccion": "Estar al borde de la decisión",
+    "registro": "En el C2 penalizan mezclar expresiones coloquiales en textos formales.",
+    "definicion": "A phrase used to describe a situation where someone is indecisive or undecided about a choice, often metaphorically referring to standing on the edge of a fence that one wishes not to cross.",
+    "ejemplos": [
+      "His decision about which university to attend is best described as being on the fence.",
+      "We were on the fence about whether to attend the party or study for the exam.",
+      "I'm still on the fence about which job to accept, but I think I'll consider it carefully."
+    ]
   }
 ]
