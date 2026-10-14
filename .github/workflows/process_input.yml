@@ -11,9 +11,31 @@ permissions:
 jobs:
   procesar:
     runs-on: ubuntu-latest
+    env:
+      OLLAMA_BASE_URL: http://127.0.0.1:11434/v1
+      OLLAMA_MODEL: qwen2.5:3b
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Iniciar Ollama y descargar el modelo
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve > "$RUNNER_TEMP/ollama.log" 2>&1 &
+
+          for attempt in $(seq 1 30); do
+            if curl --silent --fail http://127.0.0.1:11434/api/tags >/dev/null; then
+              break
+            fi
+            sleep 2
+          done
+
+          if ! curl --silent --fail http://127.0.0.1:11434/api/tags >/dev/null; then
+            cat "$RUNNER_TEMP/ollama.log"
+            exit 1
+          fi
+
+          ollama pull "$OLLAMA_MODEL"
 
       - name: Instalar dependencias
         run: pip install -r requirements.txt
