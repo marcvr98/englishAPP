@@ -90,5 +90,69 @@
       "Put that down for now. I want to think about it for a while.",
       "Please put that down for now. It's not the right time."
     ]
+  },
+  {
+    "expresion": "To fall victim",
+    "traduccion": "Ser víctima",
+    "registro": "En el C2 penalizan mezclar expresiones coloquiales en textos formales.",
+    "definicion": "Una expresión que describe la situación de ser involuntariamente afectado por una situación",
+    "ejemplos": [
+      "The new law has made it easier for victims of domestic violence to seek legal help.",
+      "She felt like a victim of circumstance when she couldn't find a job after graduation."
+    ]
+  },
+  {
+    "expresion": "To be on the lookout",
+    "traduccion": "Quedarse atento",
+    "registro": "C2",
+    "definicion": "Es una frase utilizada en inglés para expresar la idea de estar atento a posibles amenazas o situaciones inesperadas.",
+    "ejemplos": [
+      "To be on the lookout for any suspicious activity.",
+      "We need to be on the lookout for any potential threats.",
+      "The team is on the lookout for any new developments in the investigation."
+    ]
+  },
+  {
+    "expresion": "Stifle somebody voice",
+    "traduccion": "No poner a alguien a hablar",
+    "registro": "Formal",
+    "definicion": "Exprime o interrumpe el discurso de alguien",
+    "ejemplos": [
+      "He stifled the speaker's voice so the class could not hear him.",
+      "The teacher stifled the student's voice when she caught him talking during the test."
+    ]
+  },
+  {
+    "expresion": "overt/subtle retaliation",
+    "traduccion": "venganza abierta/discreta",
+    "registro": "C2",
+    "definicion": "En el C2, penalizan mezclar expresiones coloquiales en textos formales. Overt/subtle retaliation se utiliza en contextos informales, pero en un texto formal se debería usar una expresión menos coloquial como 'directo/indirecto venganza'.",
+    "ejemplos": [
+      "The company decided to take overt retaliation against the employees who were involved in the scandal.",
+      "She decided to give them a subtle retaliation for the way they treated her.",
+      "The company took an overt retaliation against the employees who were involved in the scandal.",
+      "She gave them a subtle retaliation for the way they treated her."
+    ]
+  },
+  {
+    "expresion": "To be tuned into sth",
+    "traduccion": "No hay traducción necesaria, ya que es una expresión colovida común en inglés.",
+    "registro": "en el C2 penalizan mezclar expresiones coloquiales en textos formales",
+    "definicion": "Esta expresión se utiliza para indicar que alguien está atento a o consciente de algo o alguien.",
+    "ejemplos": [
+      "To be tuned into the issue to understand the full implications of the situation.",
+      "I need to be tuned into the details of the project before the presentation.",
+      "I'm going to be tuned into the conversation to catch any important details."
+    ]
+  },
+  {
+    "expresion": "Speak up",
+    "traduccion": "Hable más alto",
+    "registro": "formal",
+    "definicion": "Un apodo que se usa para llamar a alguien a hacer algo que requiere un mayor volumen de voz, generalmente utilizado en situaciones donde se espera que la persona tenga un habla clara y firme",
+    "ejemplos": [
+      "During the presentation, the speaker asked the audience to speak up because the room was very noisy.",
+      "The teacher told the students to speak up during the quiz to ensure everyone could hear them clearly."
+    ]
   }
 ]
