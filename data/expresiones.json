@@ -175,5 +175,15 @@
       "I am determined to sharpen myself up to achieve my goals in this new job.",
       "You need to sharpen yourself up for the interview, so you can make a good impression."
     ]
+  },
+  {
+    "expresion": "Scrape by",
+    "traduccion": "Extraer por",
+    "registro": "En el C2 penalizan mezclar expresiones coloquiales en textos formales.",
+    "definicion": "Extraer o recopilar información de fuentes digitales o web utilizando motores de búsqueda.",
+    "ejemplos": [
+      "When conducting a web research for a business report, it is important to scrape by using reliable and reputable sources.",
+      "To update a company's online portfolio, we need to scrape by extracting relevant data from industry reports and customer feedback."
+    ]
   }
 ]
