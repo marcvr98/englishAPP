@@ -191,5 +191,17 @@
       "Don't worry, they will outgrow their naughty phase soon.",
       "We need to be stricter with the naughty children if they keep misbehaving."
     ]
+  },
+  {
+    "expresion": "Speak up",
+    "traduccion": "Decir más alto",
+    "registro": "Neutro",
+    "definicion": "Una expresión para indicar que alguien debe hablar más fuertemente o con más claridad, generalmente en situaciones en las que el interlocutor no escucha o no comprende lo que se dice.",
+    "ejemplos": [
+      "Speaker: Hey, I didn't hear you the first time. Speak up so I can catch what you're saying.",
+      "Teacher: John, you're talking too softly. Speak up so the whole class can hear you.",
+      "Mom: Son, I can't hear you. Speak up so I can understand what you're saying.",
+      "Boss: John, I can't hear you. Speak up so I can understand your concerns."
+    ]
   }
 ]
