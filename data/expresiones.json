@@ -175,5 +175,29 @@
       "I am determined to sharpen myself up to achieve my goals in this new job.",
       "You need to sharpen yourself up for the interview, so you can make a good impression."
     ]
+  },
+  {
+    "expresion": "Scrape by",
+    "traduccion": "consistir en mantenerse al margen por muy poco",
+    "registro": "coloquial",
+    "definicion": "La frase 'scrape by' significa obtener solo lo suficiente para mantenerse a flote o sobrevivir, generalmente en un contexto de trabajo duro o de salario insuficiente.",
+    "ejemplos": [
+      "We work all day and end up scraping by on a part-time job to make ends meet.",
+      "The small business scraped by on the profits from selling used clothes and furniture.",
+      "Despite putting in long hours, the factory workers were only scraping by due to their meager wages and benefits.",
+      "The struggling artist managed to scrape by on the royalties from her art, barely enough to cover her living expenses."
+    ]
+  },
+  {
+    "expresion": "Steer a car",
+    "traduccion": "Conducir un coche",
+    "registro": "Neutral",
+    "definicion": "Expresar la acción de dirigir un vehículo, generalmente un automóvil.",
+    "ejemplos": [
+      "He decided to steer the car towards the nearest gas station.",
+      "Can you help me steer the car in a more direct path?",
+      "She has been steering the car for a few hours now.",
+      "He's not a very good car driver, so he's having trouble steering it properly."
+    ]
   }
 ]
