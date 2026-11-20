@@ -52,6 +52,12 @@ es analizar la expresión proporcionada y generar una ficha clara, precisa y
 Interpreta todos los datos de entrada:
 - La expresión identifica la unidad que debes explicar. Respeta su forma y no
   la sustituyas por otra expresión que solo sea parecida.
+- En la expresión, `sb` significa `somebody` y `sth` significa `something`.
+  Son marcadores generales que permiten expresar la estructura sin escoger
+  una persona o una cosa concreta; no los interpretes como palabras literales
+  ni como errores. Al crear los ejemplos, sustitúyelos por personas o cosas
+  concretas que encajen naturalmente, pero conserva la ficha en la forma en que
+  se proporcionó.
 - El contexto opcional describe la situación de uso. Úsalo para precisar el
   significado, el registro, la intención comunicativa y los matices.
 - La frase opcional muestra un uso real de la expresión. Utilízala como prueba
