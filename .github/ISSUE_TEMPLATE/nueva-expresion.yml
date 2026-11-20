@@ -1,0 +1,23 @@
+name: Nueva expresión
+
+description: Añadir una expresión para procesar y guardar en la aplicación.
+body:
+  - type: markdown
+    attributes:
+      value: Escribe la expresión en el título del issue. Los campos siguientes son opcionales.
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Breve descripción en español o inglés de la situación en la que se usa la expresión.
+      placeholder: Por ejemplo, una conversación informal entre compañeros de trabajo.
+    validations:
+      required: false
+  - type: textarea
+    id: frase
+    attributes:
+      label: Frase donde aparece
+      description: Una frase que contenga la expresión.
+      placeholder: Por ejemplo, I'll look into it and get back to you.
+    validations:
+      required: false
