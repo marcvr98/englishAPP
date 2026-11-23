@@ -203,5 +203,29 @@
       "Mom: Son, I can't hear you. Speak up so I can understand what you're saying.",
       "Boss: John, I can't hear you. Speak up so I can understand your concerns."
     ]
+  },
+  {
+    "expresion": "Grumble at",
+    "traduccion": "murmurar enérgicamente por algo",
+    "registro": "neutro",
+    "definicion": "Es una expresión en la que alguien expresa descontento o molestia con un tono alto y acusatorio. Normalmente usado en situaciones cotidianas.",
+    "ejemplos": [
+      "I grumbled at the injustice of it.",
+      "You can hear her grumbling at the injustice of her parking ticket.",
+      "He grumbled at the injustice of his share of the bill.",
+      "She can't believe her sister grumbled at her when she said she was leaving."
+    ]
+  },
+  {
+    "expresion": "Cut the bit",
+    "traduccion": "Disfrancetar algo",
+    "registro": "coloquial",
+    "definicion": "Cut the bit se utiliza para indicar que se debe omitir o dejar de lado un segmento o parte de una cosa o una situación. En este contexto, se refiere a eliminar o ignorar un episodio o evento específico.",
+    "ejemplos": [
+      "I wish I could cut the bit where you were violently sick into that vase.",
+      "Cut the bit where the argument got heated and started to hurt feelings.",
+      "We can cut the bit where he was absent and focus on the rest of the information.",
+      "Cut the bit where the weather was bad and consider the rest of the journey."
+    ]
   }
 ]
